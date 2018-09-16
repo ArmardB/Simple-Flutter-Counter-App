@@ -6,8 +6,6 @@ class FunMoney extends StatefulWidget {
     return new FunMoneyState();
   }
 
-
-  
 }
 
 class FunMoneyState extends State<FunMoney> {
@@ -15,8 +13,20 @@ class FunMoneyState extends State<FunMoney> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('Fun Money'),
+        title: new Text('Fun Money!'),
         backgroundColor: Colors.lightGreen,
+      ),
+      body: new Container(
+        child: new Column(
+          children: <Widget>[
+            new Center(
+                child: new Text("Get Rich!",
+                  style: new TextStyle(color: Colors.grey, fontWeight: FontWeight.w400, fontSize: 29.9)),
+            ),
+
+
+          ],
+        ),
       ),
     );
   }
